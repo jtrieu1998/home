@@ -1,15 +1,35 @@
+html{
+    background-image: linear-gradient(to bottom right, #9296b8 0%, #c0a1b1 50%, #eea85f 75%);
+}
+
+.header{
+    text-align: center;
+}
+
+#profile{
+    border-radius:50%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.icon-tray{
+    display: flex;
+    margin: 0 auto;
+    max-width: 300px;
+    justify-content: space-between;
+}
+
 body{
-  margin-top: 100px;
-  margin-left: 200px;
   font-family: 'Alata';
   font-size: 35px;
 }
-main a {
+.project{
   text-decoration: none;
   color: black;
   position: relative;
 }
-main a:after {
+.project:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -18,26 +38,70 @@ main a:after {
   right: -0.1em;
   bottom: 0;
   transition: top 200ms cubic-bezier(0, .8, .13, 1);
-  background-color: #ff9966;
+  background-color: whitesmoke;
 }
-main a:hover:after {
+.project:hover:after {
   top: 0%;
 }
-
-/* h1{
-  font-size: 40px;
-  font-family: 'Alata';
-}
-
-h3{
-  font-family: 'Alata';
-  font-size: 25px;
+/* main{
+    margin-top: 50px;
+    margin-left: 200px;
+    min-height: calc(100vh - 88px);
 } */
+
+.logo {
+    color: #d9d9d9
+}
+#linkedin:hover {
+    color: #0073b1
+}
+#gh:hover {
+    color: black
+}
+#ig:hover{
+    background-image: linear-gradient(to bottom right, #8134AF 0%, #dd2a7b 50%, #feda77 75%, #f58529 100%);
+    background-size:100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+#resume:hover{
+    color: #ff9966;
+}
 
 main p{
   font-family: 'Poppins', sans-serif;
   font-size: 23px;
-  max-width: 26em;
+  margin-right: 20%;
+  margin-left: 20%;
+  /* text-align: center; */
+}
+
+footer{
+  font-size: 17px;
+  color: #d9d9d9;
+  background-color: #404040;
+  display:block;
+  padding: 5px 0;
+  text-align: center;
+}
+
+footer a{
+    color: #d9d9d9;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
 }
 
 /* The side navigation menu */
@@ -94,10 +158,10 @@ main p{
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
+/* #main {
   transition: margin-left .5s;
   padding: 20px;
-}
+} */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
